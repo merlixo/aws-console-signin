@@ -4,6 +4,7 @@ Enable users to connect to the AWS Console using an OIDC Access Token !
 
 This repo provides the code and the Terraform configs to build and deploy an API Gateway backed by a Lambda, that enables Cognito users to connect to the AWS Console using their Access Token.
 
+
 ## Pre-requisites
 
 The following resources must me deployed on your AWS account:
@@ -13,10 +14,20 @@ The following resources must me deployed on your AWS account:
 
 ## Build & Deploy the AWS-Console-Signin feature
 
-Build the Lambda:
+Build lambda package:
+
+> ./code/lambda-aws-signin/build.sh
+
 Deploy the AWS Resources (API Gateway, Lambda, IAM Roles):
 
-## Try it !
+> cd deploy/terraform/
+
+> terraform init
+
+> terraform apply 
+
 
 
 ## How it works ?
+
+![AWS Console Signin workflow](images/aws_console_signin.png?raw=true "Workflow")
