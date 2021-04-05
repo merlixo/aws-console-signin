@@ -21,9 +21,7 @@ Build lambda package:
 Deploy the AWS Resources (API Gateway, Lambda, IAM Roles):
 
 > cd deploy/terraform/
-
 > terraform init
-
 > terraform apply 
 
 
